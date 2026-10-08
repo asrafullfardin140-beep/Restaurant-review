@@ -16,3 +16,11 @@ body[data-theme] .hint{border-color:var(--pale)}
 body[data-theme='house'] .logo-frame{width:180px;height:132px;border-radius:15px}
 .brand-thumb{object-fit:contain;background:#fff;border-radius:8px;width:48px;height:48px}
 @media(max-width:420px){body[data-theme] main{padding-top:18px}.logo-frame{width:125px;height:125px;margin-bottom:12px}body[data-theme='house'] .logo-frame{width:160px;height:112px}body[data-theme] h1{font-size:39px}body[data-theme] .card{padding:23px 24px}.business{font-size:23px}header{margin-bottom:20px}}
+
+/* Larger circular brand badges, with per-logo framing for source whitespace. */
+body[data-theme] .logo-frame{width:184px;height:184px;border-radius:50%;padding:0;border:3px solid #fff;outline:2px solid var(--accent);outline-offset:4px;box-shadow:0 9px 24px #16213b18;margin:8px auto 23px;display:grid;place-items:center;overflow:hidden;background:#fff}
+body[data-theme] .brand-logo{width:100%;height:100%;object-fit:contain;transform:scale(1.2)}
+body[data-theme='chef'] .brand-logo{transform:scale(1.38)}
+body[data-theme='house'] .brand-logo{transform:scale(1.17)}
+body[data-theme='point'] .brand-logo{transform:scale(1.12)}
+@media(max-width:420px){body[data-theme] .logo-frame{width:160px;height:160px;margin:8px auto 21px}}
